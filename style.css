@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+header {
+  background-color: #1F1F1F;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.header__top {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 3px solid #393939;
+}
+
+.header__user, .header__search {
+  display: flex;
+  align-items: center;
+}
+
+.header__user {
+  border: 1px solid  #393939;
+  border-bottom: none;
+  padding: 0px 20px;
+}
+
+.header__user > span {
+  margin-right: 10px;
+}
+
+.search__credit_card, .search__icon_container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  border: 1px solid #393939;
+  border-bottom: none;
+}
+
+.icon-credit-card {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.credit_card__text {
+  font-size: 12px;
+  line-height: 10px;
+  margin-top: 2px;;
+}
+
+.header__middle {
+  display: flex;
+  justify-content: center;
+}
+
+.header__menu > ul {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.header__menu > ul > li {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  cursor: pointer;
+}
+
+.header__menu > ul > li:hover > span {
+  border-bottom:2px solid red;
+}
+
+.header__menu > ul:hover > li > span {
+  color: gray;
+}
+
+.header__menu > ul > li:hover > span {
+  color: white;
+}
+
+.header__menu > ul > li > span {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.header__bottom {
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+
+.header__bottom > p {
+  padding: 10px 0px;
+}
+
