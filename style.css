@@ -89,6 +89,7 @@ ul {
 /* <<<<<<<<<<<<<<<<<<MAIN>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 main {
   height: 65vh;
+  margin-bottom: 100px;
 }
 h1 {
   margin: 0px;
@@ -121,6 +122,7 @@ h1 {
   font-weight: 700;
   font-size: 13px;
   cursor: pointer;
+  outline: none;
 }
 .main__image_description > button:hover {
   background-color: #9f0013;
@@ -145,6 +147,39 @@ h1 {
   cursor: pointer;
 }
 /* <<<<<<<<<<<<<<<<<<FIRST SECTION>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-section {
-
+.comics {
+  display: flex;
+  height: 60vh;
+}
+.comics__first_container, .comics__second_container {
+  height: inherit;
+}
+.comics__first_container {
+  width: 45%;
+  background-color: #151515;
+  position: relative;
+}
+.comics__second_container {
+  width: 55%;
+  background-color: #122663;
+}
+.first_container__triangle {
+  width: 0;
+  height: 0;
+  border-top: 60vh solid #151515;
+  border-left: 9vw solid transparent;
+  position: absolute;
+  transform: rotate(540deg);
+  right: -20%;
+}
+.first_container__information {
+  height: inherit;
+  margin-left: 14vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.first_container__information img, p, h1, button {
+  width: fit-content;
+  margin-bottom: 15px;
 }
