@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700&display=swap" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/e22aaea20f/UntitledProject/style.css">
   <title>Marvel</title>
 </head>
 <body>
   <header>
     <div class='header__top'>
       <div class='header__user'>
-        <span class="icon-user"></span>
+        <span class="icon--svg" aria-hidden='true'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65.6 66.7">
+            <path fill-rule="evenodd" d="M59.5 15.1L53 51.4c0 .4-.3.6-.6.6h-6.5c-.3 0-.6-.2-.8-.6l-8.8-24.7H36l-4.3 24.7c-.1.3-.3.6-.6.6H25c-.3 0-.6-.2-.5-.6l6.6-37.3c.1-.3.3-.6.6-.6h6.4c.5 0 .7.2.8.6l8.8 24.7h.3l5.5-30.4C47.9 3.7 40.6.9 32.7.9 14.7.9.2 15.5.2 33.4c0 8.8 3.5 16.7 9.1 22.5l7.3-41.7c.1-.3.3-.6.6-.6H24c.3 0 .5.2.5.6l-8.3 47.2c4.8 2.8 10.4 4.5 16.4 4.5 17.9 0 32.5-14.5 32.5-32.5 0-6.8-2.1-13.1-5.6-18.3z"></path>
+          </svg>
+        </span>
         <span>SIGN IN</span>
         <span>|</span>
         <span>JOIN</span>
@@ -26,11 +30,19 @@
       </div>
       <div class='header__search'>
         <div class='search__credit_card'>
-          <span class='icon-credit-card'></span>
-          <div class='credit_card__text'>MARVEL </br>MASTERCARD@</div>
+          <span class='icon--svg' aria-hidden="true">
+            <svg id="Layer_2_1_" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.8 80.5"><style>.st0{fill:#fff}</style>
+              <path class="st0" d="M1.3 64.2c0 8.3 6.7 15 15 15h112.3c8.3 0 15-6.7 15-15V30.9H1.3v33.3zM143.6 16.2c0-8.3-6.7-15-15-15H16.3c-8.3 0-15 6.7-15 15v4.5h142.2l.1-4.5z"></path>
+            </svg>
+          </span>
+          <div class='credit_card__text'>MARVEL </br>MASTERCARD®</div>
         </div>
         <div class='search__icon_container'>
-          <span class="icon-search"></span>
+          <span class="icon--svg icon--svg--black-fill icon--svg--black-stroke icon--search" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill-rule="evenodd"><circle cx="6.5" cy="6.5" r="5.5"></circle>
+              <path d="M14 14l3.536 3.536"></path>
+            </svg>
+          </span>
         </div>
       </div>
       </div>
@@ -51,18 +63,20 @@
     </div>
     <div class='header__bottom'>
       <p>MARVEL MOVIES & SERIES STREAMING ANYTIME ON </p>
+      <img src='./images/nav/disney_plus.png' alt='disnes plus logo' />
     </div>
   </header>
   <main>
     <div class='main__image_container'>
-      <img class='main__image-first' src='./images/main/avengers.png' alt='avengers team'/>
+      <img class='main__image-first' src='./images/main/main_shield.jpg' alt='shield team'/>
     </div>
     <div class='main__image_description'>
-      <h1>MARVEL AVENGERS </br> THE BEST TEAM</h1>
-      <p>The first Avengers moive was release in may 19th 2012</p>
+      <img src='./images/main/shield_logo.png' alt='shield logo' class='main__image'/>
+      <h1>ONE FINAL MISSION</h1>
+      <p>Get ready for the last season of 'Marvel's Agents of S.H.I.E.L.D.' whit a brand new <br /> poster!</p>
       <button>SEE MORE</button>
     </div>
-    <div class='main__image_menu'>
+    <div class='main__images_menu'>
       <nav>
         <ul>
           <li>First Avengers </br>Movie</li>
@@ -78,16 +92,57 @@
     <div class='comics__first_container'>
       <div class='first_container__triangle'></div>
       <div class='first_container__information'>
-        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/marvelunlimited_lob_log_eye_01.png" srcset="https://terrigen-cdn-dev.marvel.com/content/prod/1x/marvelunlimited_lob_log_eye_01.png" alt="MU Logo" class="sets__logo">
-        <p>AVAILABLE NOW</p>
-        <h1>NEW IN MARVEL UNLIMITED</h1>
-        <p>Read these plus 27,000+ digital comics for $9.99 a month</p>
+        <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/marvelunlimited_lob_log_eye_01.png" srcset="https://terrigen-cdn-dev.marvel.com/content/prod/1x/marvelunlimited_lob_log_eye_01.png" alt="MU Logo" class="sets__logo" />
+        <h1>FREE DIGITAL COMICS</h1>
+        <p>Marvel Unlimited is now offering a free access to some of the most <br /> iconic Marvel comics stories</p>
         <button>GET MARVEL UNLIMITED</button>
       </div>
       
     </div>
     <div class='comics__second_container'>
-
+      <img src='./images/sections/comics_main_image.jpg' alt='avenger team' />
+    </div>
+    <div class='comics_catalogue__container'>
+      <figure>
+        <img src='./images/sections/kree_skrull_card.jpg' width='173' height='97'/>
+        <figcaption>
+          <p class='comics__description'>Avengers:Kree/Skrull <br /> War | Event</p></figcaption>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src='./images/sections/avengers-mu_card.jpg' width='173' height='97'/>
+        <figcaption>
+          <p class='comics__title'>COMICS</p>
+          <p class='comics__description'>Meet the Avengers of <br /> "Final Host"</p></figcaption>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src='./images/sections/free_content_card_image_0.jpg' width='173' height='97'/>
+        <figcaption>
+          <p class='comics__description'>Read these Free Comics <br />| Marvel Universe</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src='./images/sections/avx_card_image.jpg' width='173' height='97'/>
+        <figcaption>
+          <p class='comics__title'>COMICS</p>
+          <p class='comics__description'>5 Best 'Avengers vs.<br />X-Men's Battles ande the <br /> 5 We Want to See</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src='./images/sections/17_6d23.jpg' width='173' height='97'/>
+        <figcaption>
+          <p class='comics__title'>COMICS</p>
+          <p class='comics__description'>The Story that Turned <br />Bucky Barnes Into the <br /> Winter Soldier</p>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src='./images/sections/poster_6146876297001_73f8181d700e1ee0663d0ec590180d50_0.jpg' width='173' height='97'/>
+        <figcaption>
+          <p class='comics__title'>MARVEL'S THE PULL <br /> LIST</p>
+          <p class='comics__description'>FREE COMICS on<br />Marvel Unlimited | <br /> Marvel's Pull List</p>
+        </figcaption>
+      </figure>
     </div>
   </section>
 </body>
