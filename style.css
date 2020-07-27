@@ -24,9 +24,9 @@ ul {
 }
 .header__border {
   border-bottom: 1px solid #393939;
-  padding: 0px 20px;
 }
 .header__top {
+  height: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -37,7 +37,7 @@ ul {
 .header__user-desktop {
   border: 1px solid  #393939;
   border-bottom: none;
-  padding: 0px 20px;
+  padding: 0px 25px;
 }
 .header__user-desktop > span {
   margin-right: 10px;
@@ -153,7 +153,6 @@ h1 {
   height: inherit;
   position: relative;
   color: white;
-  margin-left: 12vw;
   display: flex;
   flex-direction:column;
   justify-content: center;
@@ -311,10 +310,11 @@ h1 {
     display: flex;
     align-items: center;
   }
-  .mobile_nav__hamburger {
-    padding-left: 20px;
+  .mobile_nav__icon {
+    padding-left: 30px;
+    cursor: pointer;
   }
-  .mobile_nav__hamburger > svg {
+  .mobile_nav__icon > svg {
     fill: white;
   }
   .search__credit_card, .header__middle {
@@ -331,5 +331,19 @@ h1 {
     font-size: 12px;
     letter-spacing: normal;
     padding: 11px 0;
+  }
+  .movile_nav__menu-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #151515;
+    z-index: 1;
+    display: none;
+  }
+  .movile_nav__menu-container.open {
+    display: block;
+  }
+  .mobile_nav__close_icon > svg {
+    stroke: white;
   }
 }
